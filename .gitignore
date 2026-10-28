@@ -4,3 +4,7 @@ __pycache__/
 config.json
 selftest-report.json
 libmpv-2.dll
+lib/
+*.dll
+.venv/
+SYSTEM_STATE.txt
