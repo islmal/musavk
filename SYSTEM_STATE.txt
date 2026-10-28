@@ -1,0 +1,33 @@
+SYSTEM_STATE – generated 2026-10-28 18:11:32 +0100 by ~/.claude/scripts/generate_state.sh
+Root: /c/musavk
+
+===== GIT =====
+(not a git repository)
+
+===== FILES (lines; lockfiles and binary assets omitted) =====
+   198 STATUS.md
+     7 config.json
+    78 config.py
+    67 docs/plans/2026-10-28-vk-null-subtitle-title.md
+  1224 main.py
+    55 musavk.spec
+   526 player_widget.py
+     6 requirements.txt
+   140 selftest-report.json
+    26 tests/test_vk_subs_patch.py
+   767 vk_search.py
+   3094  TOTAL
+
+===== DEPENDENCIES =====
+--- requirements.txt
+PyQt6>=6.6
+python-mpv>=1.0.6
+yt-dlp>=2025.1.1
+requests>=2.31
+Pillow>=10.0
+certifi>=2024.2.2
+
+===== SCRIPTS =====
+
+===== CHECKS =====
+none defined

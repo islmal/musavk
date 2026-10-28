@@ -1,0 +1,6 @@
+build/
+dist/
+__pycache__/
+config.json
+selftest-report.json
+libmpv-2.dll
