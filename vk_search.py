@@ -25,7 +25,7 @@ UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
       "(KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36")
 API_VERSION = "5.245"
 CLIENT_ID = "52461373"          # vkvideo.ru web client
-CLIENT_SECRET = "o557NLIkAErNhakXrQ7A"
+CLIENT_SECRET = "o557NLIkAErNhakXrQ7A"  # public value shipped in vkvideo.ru's web client, not a private secret
 WEB_HEADERS = {"Origin": "https://vkvideo.ru", "Referer": "https://vkvideo.ru/", "User-Agent": UA}
 
 # UI sort choices -> (VK API sort value, reverse by date locally)
