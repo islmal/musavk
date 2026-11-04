@@ -13,6 +13,13 @@ Windows desktop app (Python 3 + PyQt6) to search, watch and download videos from
 
 Private or personal-page videos (VK error 15) are not supported.
 
+## Requirements
+
+- Windows 10/11
+- Python 3.9+ (developed on 3.14; all modules use `from __future__ import annotations`)
+- `libmpv-2.dll` (see Setup)
+- Optional: `ffmpeg`, `aria2c` on `PATH`
+
 ## Setup
 
 ```bash
@@ -57,3 +64,14 @@ Output: `dist\musavk\musavk.exe` (needs `libmpv-2.dll` in the project root or `l
 - `vk_search._patch_yt_dlp_vk()` works around a yt-dlp VK extractor crash on subtitles with
   `"title": null`; remove it once upstream is fixed.
 - Architecture and project status: see [STATUS.md](STATUS.md).
+
+## Disclaimer
+
+musavk is an independent project and is not affiliated with, endorsed by or connected to VK.
+It is intended for private use only. You are responsible for complying with VK's terms of
+service and with copyright law in your jurisdiction.
+
+## License
+
+Copyright (C) 2026 islmal. Licensed under the [GNU GPL v3.0](LICENSE). PyQt6 and libmpv are
+themselves GPL-licensed, which is why this project is too.

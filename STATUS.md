@@ -36,7 +36,7 @@ Historie/Favoriten, Nicht-Windows, UI in anderen Sprachen als Englisch.
 
 1. yt-dlp-Issue vorbereiten (Fix upstream: `(sub.get('title') or '.srt')`); danach Patch entfernen.
 2. Offline-Unit-Tests für reine Logik (`parse_channel_ref`, `playback_format`, `channel_scan` mit Mock).
-3. README + `.gitignore` (`build/`, `dist/`, `__pycache__/`, `config.json`); Git-Repo fehlt.
+3. PR `public-release` mergen; danach manuell: History-Mail auf GitHub-noreply umschreiben (Plan sagt: vor Public-Schalten), Description/Topics, Secret Scanning, Visibility → Public.
 4. Self-Test gegen die gebaute `dist\musavk\musavk.exe` laufen lassen; Exe ist NICHT mit dem Patch neu gebaut → `python -m PyInstaller musavk.spec --noconfirm --clean`.
 
 Bekannt:
@@ -46,6 +46,10 @@ Bekannt:
 
 ## 4. Milestone Changelog
 
+- **2026-10-28** – Public-Release-Vorbereitung (Branch `public-release`): GPL-3.0 `LICENSE`, README
+  (Requirements/Disclaimer/License), `.gitignore` erweitert, `SYSTEM_STATE.txt` untracked,
+  Kommentar an `CLIENT_SECRET`. Verifiziert: Plan-Checks (keine DLL/Config/Pfade getrackt,
+  py_compile, `tests/test_vk_subs_patch.py` ok, LICENSE-Header, README-Links). Plan: docs/plans/archive/.
 - **2026-10-28** – Fix `'NoneType' object has no attribute 'split'` bei Wiedergabe/Download
   (VK liefert Untertitel mit `title: null`, yt-dlp `vk.py:560` crasht): Monkeypatch
   `_patch_yt_dlp_vk()` in `vk_search.py`. Verifiziert: `tests/test_vk_subs_patch.py` ok;
